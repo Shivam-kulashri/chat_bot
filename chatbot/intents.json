@@ -1,0 +1,126 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+     "responses": ["Hi! I'm a friendly chatbot. I can give you quick answers to your questions. I am also learning new stuff along the way. If needed, I can provide you the contact number for help. How can I help you today?"],
+     "context_set": ""
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful"],
+     "responses": ["Happy to help! :)", "Any time! :)", "My pleasure :) " ]
+    },
+    {"tag": "hours",
+     "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+     "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+    },
+    {"tag": "payments",
+     "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+     "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+    },
+    {"tag": "opentoday",
+     "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+     "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+    },
+    {"tag": "help",
+     "patterns": ["Okay", "Ok", "K", "Fine"],
+     "responses": ["I hope I solved your problem." , "I hope you got the answer you were looking for."]
+    },
+    {"tag": "joke",
+     "patterns": ["Tell me a joke"],
+     "responses": ["I tried to look up lighters in our website but there were 15,939 matches." ,
+     "Why did the front-end developer buy the flat under his? He always wanted a sub-domain",
+    "I ordered a chicken and an egg online. I’ll let you know.",
+    "My Girlfriend And I Went Online Shopping For Clothes While I Had Covid. She says I have no taste",
+    "I ordered a pair of sneakers from an online shopping site and found it to be defective. Is that an e-shoe?",
+    "Why don't cats like online shopping? They prefer a cat-alogue.",
+    "I was going to buy a rare spider from a pet shop. Then I realised I could pick one up on the web.",
+    "Whenever I joke about online shopping. I always make sure it’s guaranteed delivery.",
+    "Why don’t cows shop online? They prefer cattle-ogues."]
+    },
+    {"tag": "cancellation",
+     "patterns": ["I want to cancel my order", "Cancel order", "Order Cancel"],
+     "responses": [" Please Sign in to your account and view your online orders under My Orders. If the ‘Cancel Order’ button is visible, you can select this option and your order will be cancelled. If the button is not visible, it is too late to cancel your order as processing has begun."]
+    },
+    {"tag": "noanswer",
+    "patterns": [],
+    "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+   },
+   {"tag": "options",
+         "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?"],
+         "responses": ["I can guide you through order tracking, payments, person to be contacted, Department related queries or if you just want jokes, type - Tell me a joke"]
+    },
+    {"tag": "order_tracking",
+             "patterns": ["where is order with id 431B67?", "track order 562B78", "Where is my order with id 561A24?" ],
+         "responses": ["We're so sorry. Your order is Delayed","Your order has been Dispatched","Yipee! Your order is on the Way!", "Your order has been packed, though waiting for shipment", "We know you're as excited as we were for this order. Your order is out for delivery"],
+         "context": [""]
+    },
+    {"tag": "missing_id",
+    "patterns": ["where is the order","where is my order","locate the order","Delivery date of order"],
+    "responses": ["Please enter with order ID"],
+    "context": [""]
+   },
+   {"tag": "Location",
+         "patterns": ["find order location 32712","What is the Location of order 23A31?"],
+         "responses": ["Your order has reached Kapashera Hub","It is in Delhi Hub","It has reached Bangalore","It has reached Mumbai"],
+         "context": [""]
+        },
+        {"tag": "forgot_password",
+         "patterns": ["I forgot my Login password?","what to do when someone forgets Login password?","I forgot my password","Forgot password"],
+         "responses": ["Don't worry! Please enter your email id , we will send a link on your email"],
+          "context": [""]
+        },
+          {"tag": "email_id",
+          "patterns":["abx@gmail.com","abc@kiit.ac.in"],
+          "responses":["Link has been shared.Please reset your password"],
+           "context": [""]
+        },
+        {"tag": "invalid",
+         "patterns": ["Marry me","I love You","bla bla","chat with me","I am bored"],
+         "responses": ["Sorry, I didn't get you. Please ask valid questions."],
+         "context": [""]
+        },
+        {"tag": "noans",
+         "patterns": ["why","how","when","I","you"],
+         "responses": ["Can't Understand Your Question","Can you please elaborate your question?"],
+         "context": [""]
+        },
+        {"tag": "predict_delay",
+         "patterns": ["Why is order 23A12 delayed"],
+         "responses": ["We're so sorry to make you wait. :( Delay is due to manufacuring","We're so sorry to make you wait. :( Delay is due to inavailable components"],
+         "context": [""]
+        },
+        {"tag": "about",
+        "patterns": ["how you doing?","how are you"],
+        "responses": ["I,good. I hope you're good too! :D How can I help you?"],
+        "context": [""]
+       },
+       {
+        "tag": "Identity",
+        "patterns": ["Who are you","what are you"],
+        "responses": ["I am Monke, a friendly chatbot and your new friend."]
+    },
+    {
+        "tag": "haha",
+        "patterns": ["haha","lol", "rofl","lmao", "thats funny"],
+        "responses": ["I'm glad to make you laugh! :D"]
+    },
+    {
+        "tag": "programmer",
+        "patterns": [ "Who made you","who designed you","who programmed you"],
+        "responses": ["I was made by a team CodeMonke."]
+    },
+    {
+        "tag": "appreciate",
+        "patterns": ["You are awesome", "you are the best","you are great","you are good"],
+        "responses": ["Thank you!"]
+    },
+    {
+        "tag": "nicetty",
+        "patterns": ["it was nice talking to you","good talk"],
+        "responses": ["It was nice talking to you as well! Come back soon!" ]
+    }
+]
+}
